@@ -11,10 +11,10 @@
 <style>
 :root{
   --ground:#DBAD9E;
-  --ground-2:#DBAD9E;
-  --paper:#233f75;
+  --ground-2:#8A6D63;
+  --paper:#EFEDE6;
   --muted:#7C87A0;
-  --signal:#233f75;
+  --signal:#C93232;
   --line:rgba(33,33,31,.16);
 
   --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
