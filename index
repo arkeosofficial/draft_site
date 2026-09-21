@@ -11,11 +11,11 @@
 <style>
 :root{
   --ground:#DBAD9E;
-  --ground-2:#BD9486;
-  --paper:#EFEDE6;
+  --ground-2:#DBAD9E;
+  --paper:#233f75;
   --muted:#7C87A0;
-  --signal:#C4B131;
-  --line:rgba(239,237,230,.16);
+  --signal:#233f75;
+  --line:rgba(33,33,31,.16);
 
   --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
   --body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
@@ -227,7 +227,7 @@ section{position:relative;padding:clamp(80px,12vh,160px) var(--pad)}
 <div class="cursor__ring" aria-hidden="true"><img src="data:image/png;base64,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" alt="" draggable="false"></div>
 
 <div class="loader" id="loader">
-  <div class="loader__word" id="loaderWord">Fieldnote</div>
+  <div class="loader__word" id="loaderWord">ARKEOS</div>
   <div>
     <div class="loader__bar"><i id="loadBar"></i></div>
     <div class="loader__meta"><span>Loading the studio</span><span id="loadNum">0</span></div>
@@ -235,7 +235,7 @@ section{position:relative;padding:clamp(80px,12vh,160px) var(--pad)}
 </div>
 
 <header class="chrome">
-  <a class="mark" href="#top" data-cursor>Fieldnote<sup>®</sup></a>
+  <a class="mark" href="#top" data-cursor>ARKEOS<sup>®</sup></a>
   <nav>
     <a href="#work" data-cursor>Work</a>
     <a href="#studio" data-cursor>Studio</a>
@@ -291,7 +291,7 @@ section{position:relative;padding:clamp(80px,12vh,160px) var(--pad)}
       <span class="ln"><span>JOIN OUR CHAOS</span></span>
       <span class="ln"><span>JOIN ARKEOS</span></span>
     </p>
-    <!--
+
     <div class="cols">
       <div class="reveal" data-reveal>
         <h3>How we work</h3>
@@ -370,7 +370,6 @@ section{position:relative;padding:clamp(80px,12vh,160px) var(--pad)}
       <div>Fieldnote Studio<br>Replace this with your address</div>
     </div>
   </section>
--->
 </main>
 </div>
 
